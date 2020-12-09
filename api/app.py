@@ -139,7 +139,7 @@ class UserRegister(Resource):
         return make_response(jsonify(message='User has been created', access_token=access_token), 200)
 
 
-api.add_resource(TodoList, '/')
+api.add_resource(TodoList, '/todolist')
 api.add_resource(Todo, '/todo/<int:todo_id>')
 api.add_resource(UserLogin, '/login')
 api.add_resource(UserRegister, '/register')
